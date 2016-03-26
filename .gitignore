@@ -13,6 +13,8 @@
 *.txt
 # special ruler for TRENDS
 *.exe
+!/CMakeLists.txt
+!/.gitignore
 /build/*
 !/build/Makefile
 !/build/test1.glade
