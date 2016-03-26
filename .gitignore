@@ -1,0 +1,26 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+# Compiled Dynamic libraries
+*.so
+*.dylib
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.md
+*.txt
+# special ruler for TRENDS
+*.exe
+/build/*
+!/build/Makefile
+!/build/test1.glade
+/solo_bin
+/solo_opensource_lib
+/solo_opensource_src/*/*
+!/solo_opensource_src/curl-7.48.0/dist
+!/solo_opensource_src/libssh2-1.7.0/dist
+!/solo_opensource_src/openssl-1.0.2g/dist
+!/solo_opensource_src/zlib-1.2.8/dist
+/solo_opensource_src/*/*/share
