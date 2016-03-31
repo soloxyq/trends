@@ -9,8 +9,6 @@
 *.lai
 *.la
 *.a
-*.md
-*.txt
 # special ruler for TRENDS
 *.exe
 !/CMakeLists.txt

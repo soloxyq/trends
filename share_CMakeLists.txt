@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 2.8)
+set( PROJECT_NAME "TRENDS" )
+project(${PROJECT_NAME})
+SET(trends_incpath_prefix "${TRENDS_SOURCE_DIR}/solo_opensource_lib")
+
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -Wall -O2")  
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -Wall -O2")
+
+INCLUDE_DIRECTORIES(BEFORE 
+	"${trends_incpath_prefix}/curl/include/curl"
+)
+
+LINK_DIRECTORIES(
+	"${trends_incpath_prefix}/curl/lib"
+)
+
+FILE(GLOB SRCS "*.c")
+
+add_executable(${PROJECT_NAME} ${SRCS})
+TARGET_LINK_LIBRARIES(TRENDS curldll)
